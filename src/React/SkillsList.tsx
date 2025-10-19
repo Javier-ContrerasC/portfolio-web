@@ -37,20 +37,20 @@ const SkillsList = () => {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   const skills = {
-    "Web Development": [
-      "Single Page Applications (SPAs)",
-      "Landing pages and business websites",
-      "Portfolio websites",
+    "Desarrollo Web": [
+      "Aplicaciones web interactivas",
+      "Landing pages y sitios web empresariales",
+      "Sitios web de portafolio",
     ],
-    "Mobile Development": [
-      "Mobile-friendly web apps",
-      "React Native mobile apps",
+    "Infraestructura": [
+      "Uso de contenedores Docker",
+      "Configuración de redes y servidores personales",
     ],
-    "UI/UX Design & Prototyping": [
-      "UI design with Figma & Canva",
-      "UX research & improvements",
-      "Prototyping for websites & mobile apps",
+    "Computación Gráfica": [
+      "Geometría computacional y visualización 3D",
+      "Visión computacional",
     ],
+
   };
 
   const toggleItem = (item: string) => {
@@ -60,7 +60,7 @@ const SkillsList = () => {
   return (
     <div className="text-left pt-3 md:pt-9">
       <h3 className="text-[var(--white)] text-3xl md:text-4xl font-semibold md:mb-6">
-        What I do?
+        Mis áreas de experiencia...
       </h3>
       <ul className="space-y-4 mt-4 text-lg">
         {Object.entries(skills).map(([category, items]) => (
